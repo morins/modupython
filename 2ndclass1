@@ -1,0 +1,67 @@
+def greeting(name):
+    return 'Hello, {}'.format(name)
+
+def greeting(name: str) -> str:
+    return 'Hello, {}'.format(name)
+
+greeting(42)
+
+a = {1: 'hi'}
+a = { 'a': [1,2,3]}
+print(a)
+"name" in dict()
+
+# 4.5. 자료형_딕셔너리(Dictionary)
+# 딕셔너리(Dictionary)는 단어 그대로 사전을 말합니다.
+# 사전을 만든다고 이해하면 됩니다.
+
+# Key값과 Value값에 여러 자료형을 삽입할 수 있습니다.
+test={1:1, 2:[2,3,"what"], (3,"the"):"hm", 4:{5:5}}
+print(test) # 결과값은 {1: 1, 2: [2, 3, 'what'], 4: {5: 5}, (3, 'the'): 'hm'}
+
+# ex)
+# left:1, center:0, right:2
+# Key:Value(왼편의 값:오른편의 값)
+
+myDic={"left":1, "center":0, "right": 2}
+#myDic{'right': 2, 'center': 0, 'left': 1}
+# 위 출력 결과를 보면, 위와 아래의 입력한 순서가 다른 점을 확인할 수 있습니다.
+# 파이썬 사전은 해쉬(hash)를 이용하는 것을 알 수 있습니다.
+
+# Key 왼편의 값은 고정된 값입니다. 그러므로 리스트(List)형이나 사전(Dictionary)형이 올 수 없습니다.
+
+
+#사전 dic 에 대해서 a라는 키의 값이 b를 지정합니다.
+# ex)
+dic_keys = (['color', 'animal', 'form']) #이름을 dic_keys라는 리스트로 수정. 아래도 다 _로 수정.
+dic_value1 = (['yellow', 'cat', 'heart']) #list 2
+dic_value2 = (['blue', 'dog', 'star']) #list 3
+# 출력결과 color : (yellow, blue) / animal : (cat, dog) / form(heart, star)
+
+
+dic = {} #새로운 사전 dic선언.
+for i in range(len(dic_keys)): #키 길이만큼 반복문을 돌면서
+     dic[dic_keys[i]] = [dic_value1[i],dic_value2[i]] #dic사전에 키값과 나머지값들을 넣고
+     print("{0} : ({1} ,{2})".format(dic_keys[i],dic[dic_keys[i]][0],dic[dic_keys[i]][1])) #출력
+
+empty_dict1 = {}
+empty_dict2 = dict()
+
+# 파이썬은 'Sets' 데이터 타입(자료형)을 포함합니다.
+# Set은 중복되지 않고, 순서없는 유일한 원소들이 집합입니다.
+# 'set' 사용 : 구성원 확인 또는 중복 원소를 제거할 때 사용합니다.
+# 객체 'set'의 경우, union, difference 와 Symmetric difference 같은 수학적 연산 지원합니다.
+# {}곱슬괄호 또는 set()함수로 set을 만들 수 있습니다.
+# 단, 비어있는 set 생성시 {}로는 만들 수 없고, set()함수를 사용합니다.
+# 문자는 비어있는 딕셔너리(dictionary) 생성하는 데이터 구조
+
+# Set 연산은 두 단어에서 중복문자를 제외한 유일한 문자만을 뽑아냅니다.
+# a = set('abracadabra')
+# b = set('alacazam')
+
+a = set('abracadabra') # a에
+b = set('alacazam')
+print(a)
+
+# 질문_위에서 (a) 'abc'순 정렬이 가능한가요?
+
