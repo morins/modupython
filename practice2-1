@@ -1,3 +1,9 @@
+
+# 모두의 연구소, 토요일 스터디 Jump to Python - 2nd, Eunseon Jo 
+# 4.5. 자료형_딕셔너리(Dictionary)
+# 딕셔너리(Dictionary)는 단어 그대로 사전을 말합니다.
+# 사전을 만든다고 이해하면 됩니다.
+
 def greeting(name):
     return 'Hello, {}'.format(name)
 
@@ -11,9 +17,6 @@ a = { 'a': [1,2,3]}
 print(a)
 "name" in dict()
 
-# 4.5. 자료형_딕셔너리(Dictionary)
-# 딕셔너리(Dictionary)는 단어 그대로 사전을 말합니다.
-# 사전을 만든다고 이해하면 됩니다.
 
 # Key값과 Value값에 여러 자료형을 삽입할 수 있습니다.
 test={1:1, 2:[2,3,"what"], (3,"the"):"hm", 4:{5:5}}
