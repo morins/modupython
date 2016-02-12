@@ -7,6 +7,7 @@ def greeting(name: str) -> str:
 greeting(42)
 
 # 모두의 연구소, 토요일 스터디 Jump to Python - 2nd, 발표 : Eunseon Jo
+# with PyCharm5
 
 # 4.5. 자료형_딕셔너리(Dictionary)
 # 자료형(Data type)은 컴퓨터 과학과 프로그래밍 언어에서 정수, 실수 등 여러 종류의 데이터를 식별하는 분류체계입니다.
@@ -24,14 +25,14 @@ greeting(42)
 # 즉, key1,2,3...값과 value1,2,3...값 쌍들을 하나로 묶어주는 '{}'안에 각각의 요소는 key : value 형태로 이루어져 각각 쉼표(', ')로 구분되어 있습니다.
 
 #  * 4.5.1 dic = {'key':'value'} 형 딕셔너리
-#  - 실습1 : "딕셔너리형을 통해 본인 개인정보를 간단하게 직접 기입해서 프린트해봅니다"
+#  실습1 : "딕셔너리형을 통해 본인 개인정보를 간단하게 직접 기입해서 프린트해봅니다"
 
 dic = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
 print(dic) # 완료: {'phone': '01000008282', 'birth': '0809', 'name': 'EunseonJo'}, '이름': '조은선', ...형태로 나타납니다.
 
 #  * 4.5.2 a = {숫자 정수: '문자열'} 형 딕셔너리
-#    - 실습2 : "아침 스터디 모임이 10시에 시작하는 의미에서 key 정수값을 10으로 하고,
-#             value값은 좋은 아침의 의미로 'Good morning'이란 문자열을 사용해봐요 :D
+#  실습2 : "아침 스터디 모임이 10시에 시작하는 의미에서 key 정수값을 10으로 하고,
+#          value값은 좋은 아침의 의미로 'Good morning'이란 문자열을 사용해봐요 :D
 
 a = {10: 'Good morning'}
 print(a)
@@ -57,7 +58,7 @@ print(dic2)
 # 학생이 보낸 편지지는 수능 모의고사 답안지였으며, 그 답안지에 펜으로 'TEAM COCO'라고 글자가 마킹되었다고 합니다.
 # 그런 의미에서 저는 온라인에서라도 100점 맞고 싶은 마음을 담아 제 닉네임으로 사용해서 grade에 100점을 부여했고요.
 # '써니 리'학생의 경우, 모의고사 답안지 제출 대신 편지를 작성했다면, 점수는 0점이였을듯 하여 'sunny'에게는 0점을 부여했습니다.
-#  - 실습3 : '본인이 원하는 점수'는 '본인 이름'을 기입하고, 기대하는 '기대 점수'에는 '본인 닉네임'을 기입해서 실습해봅니다.
+# 실습3 : '본인이 원하는 점수'는 '본인 이름'을 기입하고, 기대하는 '기대 점수'에는 '본인 닉네임'을 기입해서 실습해봅니다.
 
 grade = {'morin': 100, 'sunny': 0}
 grade['morin']
@@ -88,9 +89,9 @@ print(c[2])
 # 딕셔너리에서는 리스트나 터플의 인덱싱 방법이 존재하지 않습니다.
 # 따라서 c[1]은 딕셔너리 {1:'d', 2:'e'}에서 key값이 1인 것의 value인 'c'를 돌려주게 됩니다. 'e'역시 같습니다.
 
-# - 실습4 : 위 4.5.2 에서 했던 실습을 토대로 뒤에 추가로 key 정수값을 스터디가 끝나는 시간인 12시로 하고,
-#         value값을 귀한 토요일 오전시간에 스터디하고있는 옆 사람에게 'You did a good job'이라고 이야기해보세요.
-#         결국은 본인에게 하는 말과도 같으니까요 :D
+# 실습4 : 위 4.5.2 에서 했던 실습을 토대로 뒤에 추가로 key 정수값을 스터디가 끝나는 시간인 12시로 하고,
+#        value값을 귀한 토요일 오전시간에 스터디하고있는 옆 사람에게 'You did a good job'이라고 이야기해보세요.
+#        결국은 본인에게 들려주는 말과도 같으니까요 :D
 g = {'10': 'Good morning', '12':'You did a good job'}
 print(g)
 
@@ -101,7 +102,7 @@ c = {'d':1, 'e':2}
 print(c['d'])
 print(c['e'])
 
-# - 실습5 : 위에서했던 실습 딕셔너리 중 4.5.1 key값을 이용하여 개별 value값을 얻는 방법을 dic['key']값을 이용해봐요.
+# 실습5 : 위에서했던 실습 딕셔너리 중 4.5.1 key값을 이용하여 개별 value값을 얻는 방법을 dic['key']값을 이용해봐요.
 
 dic = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
 print(dic['name']) # 완료: dic['이름']: 'EunseonJo'로 됩니다.
@@ -117,7 +118,7 @@ c[3] = 'f'
 print(c)
 # 완료: {1: 'd', 2: 'e', 3: 'f'}
 
-# - 실습6 : 딕셔너리 쌍 추가하기 - 2 / 예제5 딕셔너리에 문자열 추가하는 방법
+# 실습6 : 딕셔너리 쌍 추가하기 - 2 / 예제5 딕셔너리에 문자열 추가하는 방법
 
 c['name'] = 'morin'
 print(c)
@@ -135,7 +136,7 @@ print(c)
 # 완료: {'name': 'morin', 1: 'd', 2: 'e', 3: 'f', 4: [1, 2, 3, 4]}
 
 # 4.5.8 딕셔너리 쌍 삭제하는 방법
-# - 실습7 : 딕셔너리 요소 삭제하기
+# 실습7 : 딕셔너리 요소 삭제하기
 
 del c[4]
 print(c)
@@ -144,18 +145,79 @@ print(c)
 # 4.5.9 딕셔너리 관련 함수 내 Key값 리스트 만들기(keys)
 
 # 딕셔너리를 자유자재로 사용하기 위해서는 딕셔너리가 자체적으로 가지고 있는 관련 함수들을 사용해보면 됩니다.
-# - 실습8 : h.keys()값 사용하기
+# 실습8 : h.keys()값 사용하기
 
 h = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
 print(h.keys()) # 완료: dict_keys(['birth', 'phone', 'name'])
 # h.keys()는 딕셔너리 h의 key값 만을 모아서 dict_keys 객체로 보여줍니다.
 
-# 예제7) h.values()값 사용하기 
+# 예제7) h.values()값 사용하기
 print(h.values())
 # h.values()는 딕셔너리 h의 values값 만을 모아서 dict_values 객체로 보여줍니다.
 
-#
+# dict_keys 객체는 리스트를 사용하는 것과 차이가 없습니다.(* 리스트 고유의 메소드인 append, insert, pop, remove, sort 등의 메소드를 수행할 수 없습니다)
 
+# 실습9 :
+for h in h.keys():
+    print(h)
+# 완료: (각 한줄씩) name, birth, phone
+
+# 예제8) 리스트 list(j.keys())로 변환하기 / dict_keys 객체
+# dict_keys 객체를 리스트로 변환하려면 다음과 같이 하면 됩니다.
+
+j = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+print(list(j.keys()))
+# 완료: ['name', 'phone', 'birth']
+
+# 예제9) Value리스트 만들기(values)
+# Value값만을 얻고 싶을 때, a.values()처럼 values함수를 사용하면 됩니다.
+# dict_values 객체 역시 dict_keys 객체와 마찬가지로 리스트를 사용하는 것과 동일하게 사용하면 됩니다.
+
+k = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+print(k.values())
+# 완료: dict_values(['EunseonJo', '01063078282', '0809'])
+
+# 실습10 : Key, Value 쌍 얻기(items)
+
+l = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+print(l.items())
+# 완료: dict_items([('phone', '01063078282'), ('birth', '0809'), ('name', 'EunseonJo')])
+
+# 예제10) Key, Value 쌍 모두 지우기(clear)
+
+l.clear()
+print(l)
+# 완료: {}
+
+# 실습11 : Key값으로 Value값 얻기(get)
+
+m = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+print(m.get('name'))
+print(m.get('birth'))
+# 완료: Value값
+# get(x) 함수는 x라는 key에 대응하는 value값을 돌려줍니다.
+# 주의할 점은 m['no-key']'존재하지 않는 키'값을 가져오려고 할 경우에 key error를 발생시키고, None을 리턴하는 차이가 있습니다.
+
+# 예제11) 해당하는 값 없을 경우, 디폴트하기
+# m값에 'food'라는 해당하는 값이 없다면, 디폴드 값인 'bar'를 리턴합니다.
+
+print(m.get('food', 'bar'))
+
+# 해당 key값이 있는지 조사하는 방법(in)
+# 실습 12 : 'value' in a
+
+n = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+print('name' in n)
+print('food' in n)
+
+# '' in n 문자열이 딕셔너리의 key값에 있으면 True, 없으면 False 완료값이 나온다.
+
+
+
+
+
+
+# 4.5.9 딕셔너리 관련 함수 내 Key값 리스트 만들기(keys)
 
 
 
@@ -222,4 +284,4 @@ print(a)
 #변수의 범위(Scoping rule)
 #변수가 사용되는 범위
 # 지역변수(Local variable) : 함수내에서만 사용
-#전역변
+# 전역변수
