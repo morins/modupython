@@ -1,4 +1,6 @@
 
+# 모두의 연구소, 토요일 스터디 Jump to Python - 2nd, 발표 : Eunseon Jo
+
 # 4.7 자료형 : 참과 거짓(True/False)
 
 # 자료형에는 참과 거짓이 있습니다.
