@@ -66,3 +66,7 @@ True # 결과값
 
 print(a not in b)
 False # 결과값
+
+# 다음은 4.8 변수(Variable)으로 이동해주세요 :D
+# practice4-8_Variable.py
+
