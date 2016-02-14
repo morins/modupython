@@ -1,10 +1,10 @@
-> # ** 파이썬(Python ver.3.-) 토요일 스터디 모임 
-
+> # ** 파이썬(Python3) 토요일 스터디 모임 
+  # with Pycharm5 
 > ###  * 스터디 일정   
    매주 토요일 오전 10시 - 12시 
 
 > ###  * 스터디 교재  
-   점프 투 파이썬 [http://wikidocs.net/1]
+   점프 투 파이썬 : Jump to Python [http://wikidocs.net/1]
 
 > ###  * 스터디 목표
 
@@ -28,15 +28,15 @@
    예습 : 교재 1 ~ 3. 파이썬이란 무엇인가? 
    02월 06일 지상우 : 교재 4. 자료형 1) 숫자형(Number) ~ 4) 튜플(Tuple)  
    02월 13일 조은선 : 교재 4. 자료형 5) 딕셔너리(Dictionary) ~ 8) 변수 
-   02월 20일 서미경
+   02월 20일 박상준 : 교재 5. 제어문  
    02월 27일 정경창
    03월 05일 이돈형
-   03월 12일 박상준 
+   03월 12일 서미경
    03월 19일 김동환 
    * 변동 요청시 1주일 전에 교체해서 진행할 수 있으며, 이후 일정은 추후 업데이트 예정입니다. 
 
 > ### * 준비사항
-   노트북, 파이썬 설치(Python 3.0 이상 ver.), IDE개발환경 : PyCharm 5 개발 S/W 다운로드 - 샘플코드 분석 
+   노트북, 파이썬 설치(Python 3.0 이상 ver.), IDE개발환경 : PyCharm5 개발 S/W 다운로드 - 샘플코드 분석 
 
 > ### * 마음가짐 
 >  `Success in life is a matter not so much of talent and opportunity as of concentration and perseverance. - from Wendte`
