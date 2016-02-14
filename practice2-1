@@ -1,10 +1,3 @@
-def greeting(name):
-    return 'Hello, {}'.format(name)
-
-def greeting(name: str) -> str:
-    return 'Hello, {}'.format(name)
-
-greeting(42)
 
 # 모두의 연구소, 토요일 스터디 Jump to Python - 2nd, 발표 : Eunseon Jo
 # with PyCharm5
@@ -17,7 +10,7 @@ greeting(42)
 
 # Key:Value(왼편의 값:오른편의 값)이며, 한 쌍으로 만드는 자료형입니다.
 # 예를 들자면, key값은 'skating'이라면, value값은 '스케이팅'이 될 것입니다.
-# 특징은 리스트나 터플처럼 순차적(sequential)으로 해당 요소 값을 구하지 않고, key값을 통해 value값을 얻어낸다는 점입니다.
+# 특징은 리스트나 튜플처럼 순차적(sequential)으로 해당 요소 값을 구하지 않고, key값을 통해 value값을 얻어낸다는 점입니다.
 # 한마디로 정리하자면, 'skating'이란 단어의 뜻을 찾기 위해 사전의 내용을 순차적으로 모두 검색하는 것이 아닌 'skating'이라는 단어가 있는 곳만을 사전 펼치듯이 펼쳐보는 것입니다.
 
 # 기본 딕셔너리형은 아래와 같습니다.
@@ -33,6 +26,7 @@ print(dic) # 완료: {'phone': '01000008282', 'birth': '0809', 'name': 'EunseonJ
 #  * 4.5.2 a = {숫자 정수: '문자열'} 형 딕셔너리
 #  실습2 : "아침 스터디 모임이 10시에 시작하는 의미에서 key 정수값을 10으로 하고,
 #          value값은 좋은 아침의 의미로 'Good morning'이란 문자열을 사용해봐요 :D
+
 
 a = {10: 'Good morning'}
 print(a)
@@ -61,11 +55,11 @@ print(dic2)
 # 실습3 : '본인이 원하는 점수'는 '본인 이름'을 기입하고, 기대하는 '기대 점수'에는 '본인 닉네임'을 기입해서 실습해봅니다.
 
 grade = {'morin': 100, 'sunny': 0}
-grade['morin']
-100
-grade['sunny']
-0
+print(grade['morin'])
 
+100
+print(grade['sunny'])
+0
 # 4.5.5 딕셔너리 변수[key]값을 넣어 value값 얻어내기
 # 자료형 4.3 리스트(List)나 4.4 튜플(Tuple)과 같이 문자열은 요소의 값들을 얻어내기 위해 인덱싱이나 슬라이싱이라는 기법을 사용했지만,
 # 딕셔너리는 단 한가지의 방법만 있을 뿐입니다.
@@ -77,6 +71,10 @@ grade['sunny']
 # 만약, 동일한 key가 존재한다면 어떤 key에 해당하는 value값을 불러야할지 딕셔너리에서는 알 수 없기 때문입니다.
 # 그래서 앞으로는 .py 안에서 abc 알파벳 순으로 겹치지 않는 예제로 진행할 예정입니다.
 # 예제3)
+c = {1:'d', 2:'e'}
+print(c[1])
+print(c[2])
+
 
 c = {1:'d', 2:'e'}
 print(c[1])
@@ -95,6 +93,7 @@ print(c[2])
 g = {'10': 'Good morning', '12':'You did a good job'}
 print(g)
 
+
 # 4.5.6 key값과 value값을 뒤집어 놓은 딕셔너리 대입하기
 # 예제4) 딕셔너리 중 4.5.5에서 했던 부분을 뒤집어서 대입해봐요.
 
@@ -105,6 +104,7 @@ print(c['e'])
 # 실습5 : 위에서했던 실습 딕셔너리 중 4.5.1 key값을 이용하여 개별 value값을 얻는 방법을 dic['key']값을 이용해봐요.
 
 dic = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+
 print(dic['name']) # 완료: dic['이름']: 'EunseonJo'로 됩니다.
 print(dic['phone'])
 print(dic['birth'])
@@ -124,12 +124,15 @@ c['name'] = 'morin'
 print(c)
 # 완료: {1: 'd', 2: 'e', 3: 'f', 'name': 'morin'} / 위와같이 숫자 알파벳형 딕셔너리에 문자열 추가 가능합니다.
 
-
 # 예제6) 딕셔너리 쌍 추가하기 - 3 / 리스트값 추가하는 방법
 # * 주의사항은 Key값에는 리스트를 쓸 수 없습니다. 하지만, 튜플에서는 key값으로 사용 가능합니다.
 # 딕셔너리에서 key값으로 구별 방법은 key가 변하는 값인지 변하지 않는 값인지에 달려 있습니다.
-# 리스트를 key 고정값으로 사용한다면, 그 값이 변할 수 있기 때문에 리스트 key로 쓸 수 없습니다. ex) a = {[1,2,3] : 'hi'} TypeError
+# 리스트를 key 고정값으로 사용한다면, 그 값이 변할 수 있기 때문에 리스트 key로 쓸 수 없습니다.
+# ex) a = {[1,2,3] : 'hi'} TypeError
 # Value값에는 변하는 값이든 변하지 않는 값이든 관계없이 아무 값이나 넣을 수 있습니다.
+# 배열 순서대로, Hash : 단어 매칭, 항상 고정되는 내용, 집합, 배열 형태는 들어가도됨
+# 숫자 : 배열과 헷갈릴 수 있어서 그런 부분이래요 :D
+# 순서 뒤바뀜(순서 보장x) / => Class 에서 재 확인
 
 c[4] = [1,2,3,4]
 print(c)
@@ -137,9 +140,9 @@ print(c)
 
 # 4.5.8 딕셔너리 쌍 삭제하는 방법
 # 실습7 : 딕셔너리 요소 삭제하기
-
 del c[4]
 print(c)
+
 # 완료: {1: 'd', 2: 'e', 3: 'f', 'name': 'morin'} / 예제6 리스트값을 delete를 이용해 개별 지움
 
 # 4.5.9 딕셔너리 관련 함수 내 Key값 리스트 만들기(keys)
@@ -148,6 +151,7 @@ print(c)
 # 실습8 : h.keys()값 사용하기
 
 h = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
+
 print(h.keys()) # 완료: dict_keys(['birth', 'phone', 'name'])
 # h.keys()는 딕셔너리 h의 key값 만을 모아서 dict_keys 객체로 보여줍니다.
 
@@ -161,6 +165,11 @@ print(h.values())
 for h in h.keys():
     print(h)
 # 완료: (각 한줄씩) name, birth, phone
+# for 제어문은 반복 구간문입니다.
+# h.keys() dic. key고정값을 앞으로 하나씩 추출하는 것입니다.
+# 임시값을 가져온 것이며, 순서대로 임의로 넣은 것입니다.
+# Tap 지정 엔터 또는 탭 자동 지정된 것과 같습니다.
+# h값은 임시 변수값 나타내는 것이래요.
 
 # 예제8) 리스트 list(j.keys())로 변환하기 / dict_keys 객체
 # dict_keys 객체를 리스트로 변환하려면 다음과 같이 하면 됩니다.
@@ -168,6 +177,7 @@ for h in h.keys():
 j = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
 print(list(j.keys()))
 # 완료: ['name', 'phone', 'birth']
+# 임시변수에서는 내부 리스트 뿌려줌 ()키값과 밸류값 자체 대괄호로 나옴, 자료구조형태는 ()괄호 형태로 알 수 있음.
 
 # 예제9) Value리스트 만들기(values)
 # Value값만을 얻고 싶을 때, a.values()처럼 values함수를 사용하면 됩니다.
@@ -194,6 +204,8 @@ print(l)
 m = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
 print(m.get('name'))
 print(m.get('birth'))
+print(m.get('phone'))
+
 # 완료: Value값
 # get(x) 함수는 x라는 key에 대응하는 value값을 돌려줍니다.
 # 주의할 점은 m['no-key']'존재하지 않는 키'값을 가져오려고 할 경우에 key error를 발생시키고, None을 리턴하는 차이가 있습니다.
@@ -207,81 +219,49 @@ print(m.get('food', 'bar'))
 # 실습 12 : 'value' in a
 
 n = {'name':'EunseonJo', 'phone':'01063078282', 'birth': '0809'}
-print('name' in n)
-print('food' in n)
+print('name' in n) # 완료: True
+print('food' in n) # 완료: False
 
 # '' in n 문자열이 딕셔너리의 key값에 있으면 True, 없으면 False 완료값이 나온다.
 
+# 응용 심화입니다.
 
+# 심화1)
+test={1:1, 2:[2,3,"how"], (3,"to"):"study", 4:{5:5}}
+print(test) # 결과값은 {1: 1, 2: [2, 3, 'how'], 4: {5: 5}, (3, 'to'): 'study'}
 
+# ex)left:1, center:0, right:2
 
-
-
-# 4.5.9 딕셔너리 관련 함수 내 Key값 리스트 만들기(keys)
-
-
-
-
-
-
-
-
-"name" in dict()
-
-
-test={1:1, 2:[2,3,"what"], (3,"the"):"hm", 4:{5:5}}
-print(test) # 결과값은 {1: 1, 2: [2, 3, 'what'], 4: {5: 5}, (3, 'the'): 'hm'}
-
-# ex)
-# left:1, center:0, right:2
-
-
+# 심화2)
 myDic={"left":1, "center":0, "right": 2}
-#myDic{'right': 2, 'center': 0, 'left': 1}
+print(myDic) # 결과값은 myDic{'right': 2, 'center': 0, 'left': 1}
 # 위 출력 결과를 보면, 위와 아래의 입력한 순서가 다른 점을 확인할 수 있습니다.
 # 파이썬 사전은 해쉬(hash)를 이용하는 것을 알 수 있습니다.
+# 즉, 사전 dic 에 대해서 a라는 키(key)의 값이 b(value)를 지정합니다.
 
-# Key 왼편의 값은 고정된 값입니다. 그러므로 리스트(List)형이나 사전(Dictionary)형이 올 수 없습니다.
-
-
-#사전 dic 에 대해서 a라는 키의 값이 b를 지정합니다.
-# ex)
-dic_keys = (['color', 'animal', 'form']) #이름을 dic_keys라는 리스트로 수정. 아래도 다 _로 수정.
-dic_value1 = (['brown', 'dog', 'heart']) #list 2
+# 심화3)
+dic_keys = (['color', 'animal', 'form']) # 방3개 키값, 이름을 dic_keys라는 리스트로 수정.
+dic_value1 = (['brown', 'dog', 'heart']) # 튜플 list 2
 dic_value2 = (['beige', 'cat', 'star']) #list 3
 dic_value3 = (['white', 'bird', 'moon']) #list 3
 # 출력결과 color : (yellow, blue) / animal : (cat, dog) / form(heart, star)
+# 추후 VALUE값 배열로 개별 지정 가능해서 인덱스나 키값으로 가져갈 수 있습니다.
+# 배열 순서가 아니면 딕셔너리 순서가 안되서 있는거 같아요 :D
 
-#"colors"는 각각 빨간색, 녹색,
-
-dic = {} #새로운 사전 dic선언.
+dic = {} #새로운 사전 dic선언. / 2차 배열 형태 값 개별적으로 가져올 수 있음
 for i in range(len(dic_keys)): #키 길이만큼 반복문을 돌면서
      dic[dic_keys[i]] = [dic_value1[i],dic_value2[i],dic_value3[i]] #dic사전에 키값과 나머지값들을 넣고
-     print("{0} : ({1}, {2}, {3})".format(dic_keys[i],dic[dic_keys[i]][0],dic[dic_keys[i]][1],dic[dic_keys[i]][2])) #출력
-
-empty_dict1 = {}
-empty_dict2 = dict()
-
-# 파이썬은 'Sets' 데이터 타입(자료형)을 포함합니다.
-# Set은 중복되지 않고, 순서없는 유일한 원소들이 집합입니다.
-# 'set' 사용 : 구성원 확인 또는 중복 원소를 제거할 때 사용합니다.
-# 객체 'set'의 경우, union, difference 와 Symmetric difference 같은 수학적 연산 지원합니다.
-# {}곱슬괄호 또는 set()함수로 set을 만들 수 있습니다.
-# 단, 비어있는 set 생성시 {}로는 만들 수 없고, set()함수를 사용합니다.
-# 문자는 비어있는 딕셔너리(dictionary) 생성하는 데이터 구조
-
-# Set 연산은 두 단어에서 중복문자를 제외한 유일한 문자만을 뽑아냅니다.
-# a = set('abracadabra')
-# b = set('alacazam')
-
-a = set('abracadabra') # a에
-b = set('alacazam')
-print(a)
-
-# 질문_위에서 (a) 'abc'순 정렬이 가능한가요?
+     print("{0} : ({1}, {2}, {3})".format(dic_keys[i],
+     dic[dic_keys[i]][0],dic[dic_keys[i]][1],dic[dic_keys[i]][2])) #출력
+# 결과값은
+# color : (brown, beige, white)
+# animal : (dog, cat, bird)
+# form : (heart, star, moon)
 
 
-#변수의 범위(Scoping rule)
-#변수가 사용되는 범위
-# 지역변수(Local variable) : 함수내에서만 사용
-# 전역변수
+# FOR문 IN 집합 RANGE 함수 10 넣었을 경우, 0-9 길이가 몇개있는지 알 수 있게끔
+# 배열 형태를 다시 한 번 더 만듬
+
+
+# 다음은 4.6 집합(Sets)으로 이동해주세요 :D
+# practice4-6_.py
