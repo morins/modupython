@@ -1,3 +1,4 @@
+# 모두의 연구소, 토요일 스터디 Jump to Python - 2nd, 발표 : Eunseon Jo
 
 # 4.6 자료형 : 집합(Sets)
 
