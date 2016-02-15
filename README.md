@@ -39,7 +39,8 @@
    노트북, 파이썬 설치(Python 3.0 이상 ver.), IDE개발환경 : PyCharm5 개발 S/W 다운로드 - 샘플코드 분석 <p>
 
 > ### * 마음가짐 
->  `Success in life is a matter not so much of talent and opportunity as of concentration and perseverance. <p> - from Wendte`
+>  `Success in life is a matter not so much of talent and opportunity as of concentration and perseverance. 
+>  - from Wendte`
 
 > ### * 스터디 로그 남기는 목적 
    1) 스터디 공부를 꾸준히 하기위해서 입니다. <p>
@@ -91,5 +92,5 @@
    - 위 내용은 스터디가 진행되는 동안 계속 업데이트 예정입니다. <p>
    - 혹시 위 내용에서 추가사항이나 수정사항 있을때에는 언제든지 알려주시면 고맙겠습니다^-^* <p>
    
-    <자료링크 도움> 고요한, 김동환, 조은선, 지상우 <p>
-    <상세설명 도움> 박상준 <p>
+    <자료링크 도움> 고요한, 김동환, 조은선, 지상우 
+    <상세설명 도움> 박상준 
