@@ -29,9 +29,9 @@
 > ### * 발표 순서
    예습 : 교재 1 ~ 3. 파이썬이란 무엇인가? <p>
    02월 06일 지상우 : 교재 4. 자료형 1) 숫자형(Number) ~ 4) 튜플(Tuple) <p>
-   링크 : [https://github.com/morins/modupython/blob/master/practice4-1_Number.py] <p>
+   [https://github.com/morins/modupython/blob/master/practice4-1_Number.py] practice4-1 ~ 4-4.py 까지 <p>
    02월 13일 조은선 : 교재 4. 자료형 5) 딕셔너리(Dictionary) ~ 8) 변수 <p>
-   링크 : [https://github.com/morins/modupython/blob/master/practice4-5_dictionary.py] <p> 
+   [https://github.com/morins/modupython/blob/master/practice4-5_dictionary.py] practice4-5 ~ 4-8.py 까지<p> 
    02월 20일 박상준 : 교재 5. 제어문  <p>
    02월 27일 정경창<p>
    03월 05일 이돈형<p>
